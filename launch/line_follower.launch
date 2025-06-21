@@ -1,0 +1,15 @@
+<launch>
+<node name="odometry_node" pkg="line_follower" type="odometry_node" output="screen"/>
+
+<node name="control_node" pkg="line_follower" type="control_node" output="screen"/>
+
+<node name="vision_control_node" pkg="line_follower" type="vision_control_node" output="screen"/>
+
+<rosparam file="$(find line_follower)/config/calibration_params.yaml" command="load" />
+</launch>
+
+
+
+
+
+
