@@ -2,7 +2,7 @@
 
 Questo progetto universitario rappresenta lo sviluppo di un algoritmo di computer vision e di controllo per un turtlebot, che aveva il compito di rimanere in carreggiata e fermarsi ai semafori. 
 <p align="center">
-    <img src="material/out.gif" alt="Demo GIF" width=200px/>
+    <img src="material/out.gif" alt="Demo GIF" width=100px/>
 </p>
 
 ## Struttura del progetto 🗂️
@@ -81,11 +81,15 @@ dove:
 - $(x_{k+1}, y_{k+1}, \theta_{k+1})$: nuova posizione e orientamento
 
 Mentre per il controllo è stato scelto il seguente:
+
 $$
 \begin{align*}
-k_1 = k_2 = 2 \zeta \alpha \\
-k_3 = \frac{\alpha^2 - \omega_d^2}{v_d}\\
-
+k_1 &= k_2 = 2 \zeta \alpha \\
+k_3 &= \frac{\alpha^2 - \omega_d^2}{v_d}\\
+u_1 &= -k1 e_x\\
+u_2 &= -k2 e_y - k_3 e_\theta\\
+v &= v_d cos(e_\theta) - u_1\\
+\omega &= \omega_d - u_2
 \end{align*}
 $$
 
