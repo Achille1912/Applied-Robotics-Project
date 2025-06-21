@@ -2,7 +2,7 @@
 
 Questo progetto universitario rappresenta lo sviluppo di un algoritmo di computer vision e di controllo per un turtlebot, che aveva il compito di rimanere in carreggiata e fermarsi ai semafori. 
 <p align="center">
-    <img src="material/out.gif" alt="Demo GIF" height=400px/>
+    <img src="material/out.gif" alt="Demo GIF" height=600px/>
 </p>
 
 ## Struttura del progetto 🗂️
